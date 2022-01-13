@@ -1,0 +1,28 @@
+###
+GET  http://localhost:4000/api/employees
+
+###
+POST http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+    "name": "Fernanda Cristiano",
+    "position": "Snr. Developer",
+    "office": "Medellin",
+    "salary": "12000"
+}
+
+###
+GET http://localhost:4000/api/employees/61ccd73a45dc45cb56bdc246
+
+###
+DELETE http://localhost:4000/api/employees/61ccd78c45dc45cb56bdc249
+
+###
+PUT http://localhost:4000/api/employees/61ccd73a45dc45cb56bdc246
+Content-Type: application/json
+
+{
+    "name": "Leandro Cristiano Mendivelso",
+    "salary": "3400"
+}
